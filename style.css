@@ -2,14 +2,18 @@
     --vermelho: #e50914;
     --preto: #141414;
 }
-body{
-    background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
-}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*base*/
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -32,4 +36,59 @@ header nav a{ /*barra de menu*/
 
 header nav a:hover{ /*cor quando passar o mouse*/
     color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+ font-size: 16px;
+ background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('img/imgfundo.jpg'); 
+ /*caixa da foto de fundo*/
+ height: 400px;
+ background-size: cover;
+/*botao assistir agora e mais informacoes*/
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 180px;
+    font-size: 42px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 35px; /*o primeiro e cima e embaixo, o segundo e lateral*/
+    margin-right: 5px;
+    font-size: 11px;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 75%;
 }
