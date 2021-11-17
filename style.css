@@ -41,7 +41,7 @@ header nav a:hover{ /*cor quando passar o mouse*/
 /*Filme Principal*/
 .filme-principal{
  font-size: 16px;
- background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('img/imgfundo.jpg'); 
+ background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('img/fundo.jpg'); 
  /*caixa da foto de fundo*/
  height: 400px;
  background-size: cover;
