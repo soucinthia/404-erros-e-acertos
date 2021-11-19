@@ -71,6 +71,7 @@ header nav a:hover{ /*cor quando passar o mouse*/
     background-color:#ff0095;
     border: none;
     color: white;
+    font-family:fantasy;
 
     padding: 10px 1px; /*o primeiro e cima e embaixo, o segundo e lateral*/
     margin-right: 5px;
