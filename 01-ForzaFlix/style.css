@@ -1,0 +1,128 @@
+:root{ /*cores padrao*/
+    --rosa:#ff0095;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base*/
+body{
+    background: var(--preto);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+header .logo{
+    color: var(--rosa);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+header .container{ /*barra de menu*/
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: row;
+    margin: 10px;
+}
+
+header nav a{ /*barra de menu*/
+    text-decoration: none;
+    color: #aaa;
+    margin: 5px;  
+}
+
+header nav a:hover{ /*cor quando passar o mouse*/
+    color: var(--rosa);
+}
+
+/*capa inicio*/
+.filme-principal{
+ background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(img/mclaren_senna_in_forza_horizon_4_4k-HD.jpg); 
+ /*caixa da foto de fundo*/
+ height: 680px;
+ background-size: cover;
+
+/*botao assistir agora e mais informacoes*/
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items:flex-start;
+}
+/*texto sobre o filme*/
+.filme-principal .descricao{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.titulo{
+    margin-top: 300px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.b { /*botao horizon*/
+    background-color:#ff0095;
+    border: none;
+    color: white;
+
+    padding: 10px 1px; /*o primeiro e cima e embaixo, o segundo e lateral*/
+    margin-right: 5px;
+    font-size: 40px;
+ 
+    display:inline;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 35px; /*o primeiro e cima e embaixo, o segundo e lateral*/
+    margin-right: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+/*muda cor ao passar o mouse*/
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+/*icones dos botoes*/
+.botao i{
+    margin-right: 5px;
+}
+/*espaço na lateral*/
+.container{
+    margin-left: 40px;
+}
+
+.filme-principal .container{
+    width: 50%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display:block;
+}
+
+.video{
+    margin-top: 0px;
+    margin: 3px;
+    color: var(--rosa);
+    margin-left: 20px;
+    margin-top: 7px;
+}
